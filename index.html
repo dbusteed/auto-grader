@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <fieldset>
+                <legend>OPTIONS</legend>
+
+                <label for="btn-choose-zip">Select ZIP</label>
+                <input id="btn-choose-zip" type="button" value="Browse..." /> <span id="selected-zip"></span>
+                
+                <br>
+
+                <label for="txt-target-file">Target File:</label>
+                <input id="txt-target-file" type="text" placeholder="index.html"/> 
+                
+                <br>
+
+                <label for="txt-assignment-name">Assignment Name:</label>
+                <input id="txt-assignment-name" type="text" placeholder="HW #1"/>
+                
+                <br>
+                
+                <label for="sel-environ">Environment:</label>
+                <select id="sel-environ">
+                    <option value="html">Static HTML</option>
+                    <option value="js">Stand-alone JS</option>
+                </select>
+                
+                <br>
+
+
+            </fieldset>
+        </div>
+        <div class="right">right</div>
+    </div>
+
+
+
+    <!-- <div>
+        <input id="btn-choose-zip" type="button" value="Choose ZIP" /> <p id="selected-zip"></p>
+        <input id="txt-target-file" type="text" placeholder="index.html"/>
+        <input id="txt-assignment-name" type="text" placeholder="HW #1"/>
+        <select id="sel-environ">
+            <option value="html">Static HTML</option>
+            <option value="js">Stand-alone JS</option>
+        </select>
+
+        <br />
+
+        <input id="btn-start-grading" type="button" value="START GRADING" />
+        <input id="btn-next-submission" type="button" value="NEXT" />
+        <input id="btn2" type="button" value="DEBUG" />
+
+        <div id="reply"></div>
+
+    </div>
+    <div>
+        <iframe id="html-view" src=""></iframe>
+    </div> -->
+
+    <script>
+        require('./renderer.js');
+     </script>
+</body>
+</html>
